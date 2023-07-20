@@ -1,14 +1,6 @@
-body {
-    background-color: #B0E0E6; /* Código hexadecimal para el azul pastel */
-    font-family: Lato; /* Opcional, para mantener la fuente Lato que ya tienes */
-    margin: 0; /* Opcional, para quitar cualquier margen predeterminado */
-  }
-  
-
-/* Estilos para centrar el texto verticalmente en la clase "aboutMe" */
-.aboutMe {
-    display: flex !important;
-    align-items: center !important; /* Centrar verticalmente */
-    height: 100% !important; /* Ajustar la altura para que Flexbox funcione */
+.container1 {
+    font-family: Lato;
+    margin: 0; 
+    background-color: aquamarine !important;
   }
   
