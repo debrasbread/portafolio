@@ -1,6 +1,234 @@
-.container1 {
-    font-family: Lato;
-    margin: 0; 
-    background-color: aquamarine !important;
+/* Estilos generales */
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
   }
-  
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* Agrega la fuente Montserrat al cuerpo */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  }
+
+.img-profile {
+  width: 300px;
+  height: 300px; 
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+/* Estilos para los íconos "awesome" */
+.fa {
+  font-size: 28px; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección de cabecera */
+
+.white-container {
+  position: relative; /* Añadir posición relativa al contenedor para que el seudoelemento funcione correctamente */
+  padding: 20px;
+}
+
+.white-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.09); /* Opacidad del fondo */
+  z-index: -1; /* Colocar el seudoelemento detrás del contenido */
+}
+
+.white-container {
+  background-image: url("cuadricula.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.text-center {
+  text-align: center;
+margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.large-text {
+  font-size: 18px; 
+  margin-bottom: 10px;
+}
+
+
+.fa-icon {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Estilos para los proyectos en el carrusel */
+
+.carousel-inner img {
+  max-width: 90%;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.carousel-caption h5 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.carousel-caption p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Estilos para las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -15px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -15px;
+}
+
+/* Estilos para las flechas del carrusel cuando están activas */
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+
+/* Estilos para las tarjetas */
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-right: 50px;
+ }
+
+
+@media (max-width: 576px) {
+  .img-profile {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+
+  .text-center {
+    margin-bottom: 20px;
+  }
+
+  .large-text {
+    font-size: 16px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Media query para dispositivos medianos y grandes (por ejemplo, tablets y pantallas de escritorio) */
+@media (min-width: 577px) {
+  .img-profile {
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+  }
+
+  .text-center {
+    margin-bottom: 30px;
+  }
+
+  .large-text {
+    font-size: 18px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 24px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    padding-left: 45%;
+    padding-right: 45%;
+    padding-top: 70px;
+  }
+}

@@ -15,14 +15,28 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Debra Figueroa · Portafolio</title>
 
-  <link href="./main.d8e0d294.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Agrega la fuente Montserrat desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tus otros enlaces CSS ... -->
 </head>
 
 
-<body style="background-color: #e5f2ff;">
+<title>Debra Figueroa · Portafolio</title>
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<link href="main.d8e0d294.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
   <!-- Add your content of header -->
   <div class="white-container">
     <div class="container">
@@ -32,12 +46,11 @@
           <div class="background-color-layer"></div>
           <main class="content-wrapper">
             <header class="white-text-container section-container">
+
               <div class="text-center">
                 <h1>Debra Figueroa</h1>
 
                 <p>
-
-
 
                   <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/debrafig/" target="_blank" title="">
                     <i class="fa fa-linkedin"></i>
@@ -77,83 +90,123 @@
 
                       <div class="row">
                         <div class="col-md-4">
-                          <p><img src="Debra-Figueroa.webp" class="img-responsive rounded-circle" alt=""></p>
+                          <p><img src="Debra-Figueroa.webp" class="img-profile rounded-circle" alt=""></p>
                         </div>
-                        <div class="col-md-8">
-                          <br>
-                          <br>
-                          <br>
-                          <br>
-                          <p>Soy desarrolladora web front-end egresada de Laboratoria con experiencia previa en
-                            comunicación estratégica, escritura
-                            y edición de publicaciones.</p>
-                          <p>Me gusta resolver problemas lógicos y prácticos a través de lenguaje, tanto si es natural
-                            como de programación.</p>
+                        <div class="col-md-8" style="margin-bottom: 20px; margin-top: 90px;">
+                          <p class="large-text">Soy desarrolladora web front-end egresada de Laboratoria con experiencia
+                            previa en comunicación estratégica, escritura y edición. Estudié comunicación pública en la
+                            Universidad de Guadalajara.</p><br>
+                          <p class="large-text">Me gusta resolver problemas lógicos y prácticos a través de lenguaje,
+                            tanto si es natural como de programación.</p>
+                        </div>
 
-                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="card">
-                    <div class="card-block">
-                      <h2>Proyectos</h2>
-                      <div class="row">
+                    <div class="text-center">
+                      <h2 style="margin-top: 30px; margin-bottom: 30px;">Proyectos</h2>
+                      <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#projectCarousel" data-slide-to="1"></li>
+                          <li data-target="#projectCarousel" data-slide-to="2"></li>
+                          <!-- Agrega más list items de acuerdo a la cantidad de proyectos -->
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="https://debrasbread.github.io/venta-de-cochera-card-validation/src/" target="_blank">
+                              <img src="venta-de-cochera.webp" alt="Venta de cochera">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Venta de cochera</h5>
+                              <p>Diseño de aplicación y de interfaz de usuario para validar tarjetas de crédito y débito
+                                con base en el algoritmo de Luhn.</p>
+                              <p><a href="https://github.com/debrasbread/venta-de-cochera-card-validation"
+                                  target="_blank">README</a></p>
+                            </div>
+                          </div>
 
-                        <div class="col-md-12" style="margin-bottom: 30px;">
-                          <a href="https://debrasbread.github.io/venta-de-cochera-card-validation/src/" target="_blank">
-                            <img src="venta-de-cochera.webp" class="img-responsive" alt="Venta de cochera">
-                          </a>
-                          <h3 class="h5">Venta de cochera</h3>
-                          <p>Diseño de aplicación y de interfaz de usuario para validar tarjetas de crédito y débito con base en el algoritmo de Luhn.</p>
-                          <p><a href="https://github.com/debrasbread/venta-de-cochera-card-validation" target="_blank">README</a></p>
-                        </div>
-                        <br>
-                        <div class="col-md-12" style="margin-bottom: 30px;">
-                          <a href="https://debrasbread.github.io/ghibli-for-beginners-data-lovers/src/" target="_blank">
-                            <img src="ghibli.webp" class="img-responsive" alt="Ghibli for Beginners">
-                          </a>
-                          <h3 class="h5">Ghibli for Beginners</h3>
-                          <p>Página web que permite al usuario ver, ordenar y filtrar información de películas (manipulación y renderizado de datos en tiempo real).</p>
-                          <p><a href="https://github.com/debrasbread/ghibli-for-beginners-data-lovers" target="_blank">README</a></p>
-                        </div>
-                        <div class="col-md-12" style="margin-bottom: 30px;">
-                          <a href="https://marchantes.vercel.app/" target="_blank">
-                            <img src="marchantes.webp" class="img-responsive" alt="Marchantes">
-                          </a>
-                          <h3 class="h5">Marchantes</h3>
-                          <p>Red social. Single-page Application (SPA) que permite a los usuarios registrarse, iniciar sesión, ver el feed general, crear publicaciones y editarlas o borrarlas.</p>
-                          <p><a href="https://github.com/debrasbread/marchantes-social-network" target="_blank">README</a></p>
-                        </div>
-                        <div class="col-md-12" style="margin-bottom: 30px;">
-                            <img src="md-links.webp" class="img-responsive" alt="MD Links">
-                          </a>
-                          <h3 class="h5">MD Links</h3>
-                          <p>Librería e interfaz de línea de comando que analiza archivos Markdown para detectar links rotos usando Node.js.</p>
-                          <p><a href="https://github.com/debrasbread/md-links" target="_blank">README</a></p>
+                          <div class="carousel-item">
+                            <a href="https://debrasbread.github.io/ghibli-for-beginners-data-lovers/src/" target="_blank">
+                              <img src="ghibli.webp" alt="Ghibli for Beginners">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Ghibli for Beginners</h5>
+                              <p>Página web que permite al usuario ver, ordenar y filtrar información de películas
+                                (manipulación y renderizado de datos en tiempo real).</p>
+                              <p><a href="https://github.com/debrasbread/ghibli-for-beginners-data-lovers"
+                                  target="_blank">README</a></p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <a href="https://marchantes.vercel.app/" target="_blank">
+                              <img src="marchantes.webp" alt="Marchantes">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Marchantes</h5>
+                              <p>Red social. Single-page Application (SPA) que permite a los usuarios registrarse, iniciar sesión, ver el feed general, crear publicaciones y editarlas o borrarlas.
+                              </p>
+                              <p><a href="https://github.com/debrasbread/marchantes-social-network" target="_blank">README</a></p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <a href="" target="_blank">
+                              <img src="md-links.webp" alt="MD Links">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>MD Links</h5>
+                              <p>Librería e interfaz de línea de comando que analiza archivos Markdown para detectar links rotos usando Node.js.</p>
+                              <p><a href="https://github.com/debrasbread/md-links"
+                                  target="_blank">README</a></p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <a href="https://debrasbread.github.io/club-botanico/" target="_blank">
+                              <img src="club-botanico.webp" alt="Club Botánico">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Club Botánico</h5>
+                              <p>[En construcción] Página ligera creada con HTML y CSS para El Club Botánico. </p>
+                              <p><a href="https://github.com/debrasbread/club-botanico"
+                                  target="_blank">README</a></p>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <a href="https://cheerful-lolly-07ccb4.netlify.app/" target="_blank">
+                              <img src="google-clone.webp" alt="Clon de Google">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Clon de Google</h5>
+                              <p>Clon de la interfaz gráfica de la página principal de Google realizado con HTML y CSS.
+                              </p>
+                              <p><a href="https://github.com/debrasbread/clon-de-google" target="_blank">README</a></p>
+                            </div>
+                          </div>
 
                         </div>
-                        <div class="col-md-12" style="margin-bottom: 30px;">
-                          <a href="https://debrasbread.github.io/club-botanico/" target="_blank">
-                            <img src="club-botanico.webp" class="img-responsive" alt="Club Botánico">
-                          </a>
-                          <h3 class="h5">Club Botánico</h3>
-                          <p>[En construcción] Sitio web ligero creado con HTML y CSS para el Club Botánico.</p>
-                        </div>
-                                  </main>
+                        <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+          </main>
         </div>
       </div>
     </div>
   </div>
-  <footer class="footer-container white-text-container text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p><img src="" alt=""></p>
-
-  </footer>
-
-  <script>
+   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
       scrollRevelation('.card');
     });
@@ -173,6 +226,16 @@
 
 -->
   <script type="text/javascript" src="./main.bc58148c.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Popper.js (required for Bootstrap) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
