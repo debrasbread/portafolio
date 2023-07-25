@@ -42,5 +42,5 @@ Características: HTML, CSS.
 
 ***
     
-Aquí puedes ver mi [portafolio] (https://grand-kitsune-0a0374.netlify.app/).
+[Aquí](https://grand-kitsune-0a0374.netlify.app/) puedes ver mi portafolio.
 
