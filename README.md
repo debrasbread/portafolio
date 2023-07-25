@@ -22,7 +22,7 @@ Descripción: Red social. Single-page Application (SPA) que permite a los usuari
 
 Características: HTML, CSS, JavaScript, SPA, CRUD, Firebase, Firestore.
 
-* MD Links - Librería para detectar links rotos
+* MD Links
 
 Descripción: Librería e interfaz de línea de comando que analiza archivos Markdown para detectar links rotos usando Node.js. 
 
@@ -40,4 +40,4 @@ Descripción: Clon de la interfaz gráfica de la página principal de Google rea
 
 Características: HTML, CSS.
     
-Visita mi portafolio [https://grand-kitsune-0a0374.netlify.app/].
+Visita mi ![portafolio] (https://grand-kitsune-0a0374.netlify.app/).
